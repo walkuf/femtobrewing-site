@@ -5,10 +5,10 @@ const recipes = [
   {
     name: 'Placitas Pils',
     style: 'German Pils (BJCP 5D)',
-    og: '1.051',
+    og: '1.052',
     fg: '1.010',
-    abv: '5.4%',
-    ibu: '37',
+    abv: '5.5%',
+    ibu: '38',
     srm: '3.5',
     notes: 'Belgian Pilsner malt, noble hops, W-34/70 lager yeast — with a whisper of Cascade at flameout. The Southwest in a glass. Fully automated grain-to-glass in Placitas, NM.',
     beersmithUrl: 'https://beersmithrecipes.com/viewrecipe/5527929',
