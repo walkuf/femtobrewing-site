@@ -4,8 +4,13 @@ import styles from './Recipes.module.css'
 const recipes = [
   {
     name: 'Placitas Pils',
-    style: 'German Pilsner',
-    notes: 'Fully automated lager brewed in Placitas, NM. Recipe currently in development — check BeerSmith for the latest version.',
+    style: 'German Pils (BJCP 5D)',
+    og: '1.051',
+    fg: '1.010',
+    abv: '5.4%',
+    ibu: '37',
+    srm: '3.5',
+    notes: 'Belgian Pilsner malt, noble hops, W-34/70 lager yeast — with a whisper of Cascade at flameout. The Southwest in a glass. Fully automated grain-to-glass in Placitas, NM.',
     beersmithUrl: 'https://beersmithrecipes.com/viewrecipe/5527929',
   },
 ]
@@ -24,10 +29,13 @@ export default function Recipes() {
                   <h3 className={styles.name}>{r.name}</h3>
                   <span className={styles.style}>{r.style}</span>
                 </div>
-                {(r.og || r.abv) && (
+                {(r.og || r.abv || r.ibu || r.srm) && (
                   <div className={styles.stats}>
-                    {r.og && <div className={styles.stat}><span className={styles.statVal}>{r.og}</span><span className={styles.statKey}>OG</span></div>}
+                    {r.og  && <div className={styles.stat}><span className={styles.statVal}>{r.og}</span><span className={styles.statKey}>OG</span></div>}
+                    {r.fg  && <div className={styles.stat}><span className={styles.statVal}>{r.fg}</span><span className={styles.statKey}>FG</span></div>}
                     {r.abv && <div className={styles.stat}><span className={styles.statVal}>{r.abv}</span><span className={styles.statKey}>ABV</span></div>}
+                    {r.ibu && <div className={styles.stat}><span className={styles.statVal}>{r.ibu}</span><span className={styles.statKey}>IBU</span></div>}
+                    {r.srm && <div className={styles.stat}><span className={styles.statVal}>{r.srm}</span><span className={styles.statKey}>SRM</span></div>}
                   </div>
                 )}
               </div>
