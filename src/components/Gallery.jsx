@@ -2,9 +2,12 @@ import styles from './Gallery.module.css'
 
 // Drop your photos into public/gallery/ and add filenames + captions here
 const photos = [
-  { src: '/gallery/photo1.jpg', alt: 'Brewing equipment' },
   { src: '/gallery/photo2.jpg', alt: 'Brewing equipment' },
   { src: '/gallery/photo3.jpg', alt: 'Brewing equipment' },
+  { src: '/gallery/photo4.jpg', alt: 'Brewing equipment' },
+  { src: '/gallery/photo5.jpg', alt: 'Brewing equipment' },
+  { src: '/gallery/photo6.jpg', alt: 'Brewing equipment' },
+  { src: '/gallery/photo7.jpg', alt: 'Brewing equipment' },
 ]
 
 export default function Gallery() {
